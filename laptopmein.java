@@ -110,6 +110,8 @@ public class laptopmein {
                 for (Laptop laptop:laptops){
                     System.out.println(laptop);
                 }
+                case 0:
+                break;
 
                 }
             }
