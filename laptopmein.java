@@ -12,17 +12,8 @@ public class laptopmein {
         Laptop laptop3 = new Laptop("Игровой ноутбук MSI Thin GF63", 16, 1024, "Window", "white");
         Laptop laptop4 = new Laptop("Игровой ноутбук Asus ROG Zephyrus G15", 8, 1024, "Window", "blue");   
     
-    
-        // System.out.println(laptop1);
-        // System.out.println(laptop2);
-        // System.out.println(laptop3);
-        // System.out.println(laptop4);
-    
-        HashSet<Laptop> laptops = new HashSet<>(Arrays.asList(laptop1,laptop2,laptop3,laptop4));
-        for (Laptop laptop:laptops){
-            System.out.println(laptop);
-        }
-    Map<String, Object> filters = new HashMap<>();
+
+        Map<String, Object> filters = new HashMap<>();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -114,6 +105,12 @@ public class laptopmein {
                         System.out.println(laptop4);
                             break;
                     }
+                case 5:
+                HashSet<Laptop> laptops = new HashSet<>(Arrays.asList(laptop1,laptop2,laptop3,laptop4));
+                for (Laptop laptop:laptops){
+                    System.out.println(laptop);
+                }
+
                 }
             }
         }
